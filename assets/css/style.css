@@ -1,0 +1,174 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root
+{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-texto: #464646;
+}
+
+body 
+{
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol, ul,li 
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--cor-de-texto);
+}
+
+/*********** Sección Menu **********/
+
+.menu /*Parte de la cabezera*/
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 152px;
+   
+}
+
+.menu__header /*Parte de la imagen y el texto*/
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.menu__title /*Titulo que aparece al lado del logo*/
+{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 15px;
+    color: var(--cor-de-texto);
+}
+
+/*Parte que contiene todo el menu*/
+.menu__list
+{
+    display: flex;
+    margin-right: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.156rem;
+}
+
+.menu__list__item
+{
+    margin-right: 1.25rem;
+    color: var(--cor-de-texto);
+}
+
+.menu__list__item__contato
+{
+    font-weight: 700;
+}
+
+/********** Sección Title **********/
+
+section.title{
+
+}
+
+/********** Sección About **********/
+
+section.about{
+
+}
+
+/********** Sección Hobbies **********/
+
+section.hobbies{
+    
+}
+
+/********** Experiencia Académica **********/
+
+section.academic{
+
+}
+
+/********** experiencia **********/
+
+section.experience{
+
+}
+
+/********** Contacto **********/
+
+section.formcontato{
+
+}
+
+/********** footeer **********/
+
+section.footer{
+   
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/********** Tablet **********/
+@media (min-width: 768px) 
+{
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/********** Mobile **********/
+@media (min-width: 425px) 
+{
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}
