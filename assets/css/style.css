@@ -41,8 +41,9 @@ a
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 152px;
-   
+    padding: 0rem 9.5rem;
+    width: 71rem;
+    height: 5.5rem;
 }
 
 .menu__header /*Parte de la imagen y el texto*/
@@ -76,8 +77,13 @@ a
 
 .menu__list__item
 {
-    margin-right: 1.25rem;
+    width: 67px;
+    height: 19px;
+    padding-right: 1.25rem;
     color: var(--cor-de-texto);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .menu__list__item__contato
@@ -87,8 +93,72 @@ a
 
 /********** Sección Title **********/
 
-section.title{
+.title__div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7.5rem 9.5rem;
+    
+    width: 71rem;
+    height: 23rem;
+}
 
+.title__container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 46.938rem;
+    height: 15.375rem;
+}
+
+.title__bio
+{
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    color: var(--cor-de-texto);
+    width: 751px;
+    height: 122px;
+}
+
+.title__subsection
+{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 1.25rem 0 0;
+    padding-top: 1.5rem;
+    color: var(--cor-de-texto);
+    width: 751px;
+    height: 52px;
+}
+
+.title__network
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 4rem;
+    padding-left: 0;
+    margin: 0;
+    width: 467px;
+    height: 24px;
+}
+
+.title__network__item
+{
+    align-items: center;
+    margin-right: 1.25rem;
+}
+
+.title__profile
+{
+    width: 23rem;
+    height: 23rem;
+    order: 1;
 }
 
 /********** Sección About **********/
