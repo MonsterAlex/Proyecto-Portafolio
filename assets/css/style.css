@@ -11,6 +11,7 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-texto: #464646;
    --cor-de-secciones:#EAF2FD;
+   --cor-blanco: #ffffff;
 }
 
 body 
@@ -43,8 +44,6 @@ a
     justify-content: space-between;
     align-items: center;
     padding: 0rem 9.5rem;
-    width: 71rem;
-    height: 5.5rem;
 }
 
 .menu__header /*Parte de la imagen y el texto*/
@@ -106,9 +105,6 @@ a
     justify-content: space-between;
     align-items: center;
     padding: 7.5rem 9.5rem;
-    
-    width: 71rem;
-    height: 23rem;
 }
 
 .title__container
@@ -174,8 +170,6 @@ a
     display: flex;
     flex-direction: column;
     padding: 4rem;
-    width: 90rem;
-    height: 23.938rem;
     background-color: var(--cor-de-secciones);
 }
 
@@ -198,11 +192,65 @@ a
     text-align: left;
 }
 
+/********** Sección skills **********/
+.skills
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills__title
+{
+    width: 5.125rem;
+    height: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.skills__line
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.skills__box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    width: 176px;
+    height: 174px;
+    background-color: var(--cor-blanco);
+}
+
+.skills__box ul
+{
+    padding-left: 16px;
+}
+.skills__name
+{
+    width: 144px;
+    height: 1.188rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    padding-top: 8px;
+}
 
 /********** Sección Hobbies **********/
 
-section.hobbies{
-    
+.hobbies
+{
+
 }
 
 /********** Experiencia Académica **********/
