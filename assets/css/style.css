@@ -10,6 +10,7 @@ coloque nas sessões indicadas*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-texto: #464646;
+   --cor-de-secciones:#EAF2FD;
 }
 
 body 
@@ -84,6 +85,11 @@ a
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+}
+
+.menu__list__item:hover
+{
+    text-decoration: underline;
 }
 
 .menu__list__item__contato
@@ -163,9 +169,35 @@ a
 
 /********** Sección About **********/
 
-section.about{
-
+.about
+{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+    width: 90rem;
+    height: 23.938rem;
+    background-color: var(--cor-de-secciones);
 }
+
+.about__title
+{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--cor-de-texto);
+}
+
+.about__paragraph
+{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 
 /********** Sección Hobbies **********/
 
