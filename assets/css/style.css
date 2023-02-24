@@ -208,6 +208,7 @@ a
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
+    text-align: center;
 }
 
 .skills__line
@@ -250,7 +251,57 @@ a
 
 .hobbies
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.hobbies__title
+{
+    width: 5.125rem;
+    height: 2.375rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.hobbies__line
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.hobbies__box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    width: 176px;
+    height: 174px;
+    background-color: var(--cor-blanco);
+}
+
+.hobbies__box ul
+{
+    padding-left: 16px;
+}
+
+.hobbies__name
+{
+    width: 144px;
+    height: 1.188rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    padding-top: 8px;
 }
 
 /********** Experiencia Académica **********/
