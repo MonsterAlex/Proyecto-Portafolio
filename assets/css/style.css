@@ -12,6 +12,9 @@ coloque nas sessões indicadas*/
    --cor-de-texto: #464646;
    --cor-de-secciones:#EAF2FD;
    --cor-blanco: #ffffff;
+   --cor-de-botones: #2A7AE4;
+   --cor-de-transicion-demo: #03A9F4;
+   --cor-de-transicion-repo: #BDBDBD;
 }
 
 body 
@@ -352,8 +355,8 @@ a
 .academic__courses__item__img
 {
     background-color: var(--cor-blanco);
-    width: 368px;
-    height: 286px;
+    width: 23rem;
+    height: 17.875rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -371,7 +374,7 @@ a
 
 .academic__courses__item__title h4
 {
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 .academic__courses__item__subtitle
@@ -389,10 +392,162 @@ a
 
 /********** experiencia **********/
 
-section.experience{
-
+.experience
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 9.5rem 0;
+    width: 71rem;
+    height: 117.875rem;
 }
 
+.experience__section__title
+{
+    width: 361px;
+    height: 38px;
+    margin: 0 0 32px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+}
+
+.experiencie__box
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 4rem;
+    width: 71rem;
+    height: 113.5rem;
+}
+
+.experience__img
+{
+    width: 47rem;
+    height: 25.375rem;
+    border-radius: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+}
+
+.experience__img-juegoAhorcado
+{
+    order: 1;
+}
+
+.experience__info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 23rem;
+    height: 7rem;
+    
+    margin-left: 16px;
+}
+
+.experience__info-ahorcado
+{
+    margin: 0 16px 0 0;
+}
+
+.experience__title
+{
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--cor-de-texto);
+}
+
+.experience__text
+{
+    width: 23rem;
+    height: 1.188rem;
+    margin: 0.5rem 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--cor-de-texto);
+}
+
+.experience__description
+{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 35rem;
+    height: 3.188rem; 
+    margin-top: 0.5rem; 
+}
+
+.experiencia__botao--repo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+    width: 7.25rem;
+    height: 3.188rem;
+    margin-right: 1rem;
+
+    background-color: transparent;
+    color: var(--cor-de-botones);
+    border: 1px solid var(--cor-de-botones);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.188rem;
+
+    transition: 0.5s;
+}
+
+.experiencia__botao--repo:hover
+{
+    background-color: var(--cor-de-transicion-repo);
+    color: var(--cor-de-botones);
+    border-color: var(--cor-de-transicion-repo);
+}
+
+.experience__botao--demo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    width: 105px;
+    height: 51px;
+
+    background-color: var(--cor-de-botones);
+    color: var(--cor-blanco);
+    border-color: var(--cor-de-botones);
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    transition: 0.5s;
+}
+
+.experience__botao--demo:hover
+{
+    background-color: var(--cor-de-transicion-demo);
+    color: var(--cor-blanco);
+    border: 1px solid var(--cor-de-transicion-demo);
+}
 /********** Contacto **********/
 
 section.formcontato{
