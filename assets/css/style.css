@@ -550,14 +550,130 @@ a
 }
 /********** Contacto **********/
 
-section.formcontato{
+.formcontato
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px;
+    margin-top: 32px;
+    background-color: var(--cor-de-secciones);
+}
 
+.formcontato__contacto
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 64px 0px 0px;    
+    width: 1136px;
+    height: 660px;
+}
+
+.formcontato__img
+{
+    width: 464px;
+    height: 593px;
+}
+
+.formcontato__text
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 656px;
+    height: 596px;
+    margin-left: 16px;
+}
+
+.formcontato__title
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.formcontato__subtext
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.formcontato__form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 32px;
+
+   
+}
+
+.formcontato__input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 656px;
+    height: 56px;
+}
+
+.formcontato__textarea
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+
+    width: 656px;
+    height: 56px;
+}
+
+.formcontato__botao
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    background-color: var(--cor-de-botones);
+    color: var(--cor-blanco);
+
+    width: 144px;
+    height: 51px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 /********** footeer **********/
 
-section.footer{
-   
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 10px;
+}
+.footer__rodape p
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--cor-de-texto);
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
