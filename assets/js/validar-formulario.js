@@ -1,26 +1,26 @@
-const email = document.getElementById("email");
-const nombre = document.getElementById("nombre");
-
-nombre.addEventListener("submit", function(event){
-    if(nombre == 0)
-		{
-			return;
-		}
-		else
-		{
-			alert("se requiere que des tu nombre")
-		};
-});
-
-email.addEventListener("submit", function (event) 
+$(document).ready(function()
 {
-  if (email.validity.typeMismatch) 
+
+  $("#enviar-info").click(function(event)
   {
-    email.setCustomValidity("¡Se esperaba una dirección de correo electrónico!");
-  } 
-  else 
-  {
-    email.setCustomValidity("");
-    alert("esto funciona");
-  }
+    $("#form").submit();
+
+    var nombreContacto=$("#nombre").val();
+    var mailContacto=$("#email").val();
+    if(nombreContacto=="" || mailContacto=="")
+    {
+      alert("Alguno de los campos esta vacio",1500);
+    }          
+    else
+    { 
+      if(nombreContacto=="Alejandro" && mailContacto=="5321@1.com")
+      {
+        alert("Bienvenido De nuevo");
+      }  
+      else
+      {
+        alert("El Usuario o contraseña son incorrectos");
+      }
+    }
+  });
 });

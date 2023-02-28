@@ -87,11 +87,13 @@ a
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
+    transition: 0.2s;
 }
 
 .menu__list__item:hover
 {
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .menu__list__item__contato
@@ -157,6 +159,20 @@ a
 {
     align-items: center;
     margin-right: 1.25rem;
+
+    font-style: normal;
+    
+    font-size: 16px;
+    line-height: 19px;
+
+    transition: 0.5s;
+}
+
+.title__network__item:hover
+{
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .title__profile
@@ -617,8 +633,13 @@ a
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0.313rem;
     gap: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--cor-de-texto);
 
     width: 656px;
     height: 56px;
@@ -629,8 +650,13 @@ a
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 16px 0 0 12px;
     gap: 8px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--cor-de-texto);
 
     width: 656px;
     height: 56px;
@@ -653,6 +679,14 @@ a
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
+    transition: 0.5s;
+}
+
+.formcontato__botao:hover
+{
+    background-color: var(--cor-de-transicion-demo);
+    color: var(--cor-blanco);
+    border: 1px solid var(--cor-de-transicion-demo);
 }
 
 /********** footeer **********/
@@ -665,7 +699,9 @@ a
     align-items: center;
     padding: 32px;
     gap: 10px;
+    background-color: var(--cor-blanco);
 }
+
 .footer__rodape p
 {
     font-style: normal;
