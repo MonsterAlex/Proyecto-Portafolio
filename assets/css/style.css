@@ -192,6 +192,14 @@ a
     background-color: var(--cor-de-secciones);
 }
 
+.about__container
+{
+    width: 1136px;
+    height: 340px;
+    margin: 0 152px;
+    gap: 16px;
+}
+
 .about__title
 {
     font-size: 32px;
@@ -209,6 +217,14 @@ a
     line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
+    width: 751px;
+    height: 133px;
+    gap: 20px;
+}
+
+.about__container img
+{
+    margin-top: 16px;
 }
 
 /********** Sección skills **********/
