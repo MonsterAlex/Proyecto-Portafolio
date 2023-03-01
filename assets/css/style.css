@@ -38,78 +38,28 @@ a
     color: var(--cor-de-texto);
 }
 
-/*********** Sección Menu **********/
-
-.menu /*Parte de la cabezera*/
+/********** Sección Title **********/
+.title
 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0rem 9.5rem;
+    padding: 0px;
+    gap: 208px;
 }
-
-.menu__header /*Parte de la imagen y el texto*/
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 2rem;
-}
-
-.menu__title /*Titulo que aparece al lado del logo*/
-{
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 15px;
-    color: var(--cor-de-texto);
-}
-
-/*Parte que contiene todo el menu*/
-.menu__list
-{
-    display: flex;
-    margin-right: 1.25rem;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2.156rem;
-}
-
-.menu__list__item
-{
-    width: 67px;
-    height: 19px;
-    padding-right: 1.25rem;
-    color: var(--cor-de-texto);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    transition: 0.2s;
-}
-
-.menu__list__item:hover
-{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.menu__list__item__contato
-{
-    font-weight: 700;
-}
-
-/********** Sección Title **********/
 
 .title__div
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 7.5rem 9.5rem;
+    
+    align-items: flex-start;
+    padding: 0 0 7.5rem;
+    margin: 32px 152px;
+
+    width: 1136px;
+    height: 368px;
 }
 
 .title__container
@@ -119,6 +69,7 @@ a
     align-items: flex-start;
     width: 46.938rem;
     height: 15.375rem;
+    
 }
 
 .title__bio
@@ -177,6 +128,7 @@ a
 
 .title__profile
 {
+    display: flex;
     width: 23rem;
     height: 23rem;
     order: 1;
@@ -733,43 +685,61 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 
 /********** Tablet **********/
-@media (min-width: 768px) 
+@media screen and (min-width: 768px) 
 {
+    /* Menú */
+    
 
-/* Menú */
+    /*title*/
 
-/*title*/
+    /*Skills*/
 
-/*Skills*/
+    /*Hobbies*/
 
-/*Hobbies*/
+    /*Formación Académica*/
 
-/*Formación Académica*/
-
-/*Experiencia Profesional*/
-
+    /*Experiencia Profesional*/
 }
 
 /********** Mobile **********/
-@media (min-width: 425px) 
+@media screen and (min-width: 360px) 
 {
+    /*Menu*/
+    .menu
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        width: 360px;
+        height: 56px;
+    }
+    
+    .menu__list
+    {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    
+    .menu__list__item:not(:last-of-type)
+    {
+        visibility: hidden;
+    }
 
-/*Menu*/
+    /*Titulo*/
 
-/*Titulo*/
+    /*Sección sobre mi*/
 
-/*Sección sobre mi*/
+    /*Skills*/
 
-/*Skills*/
+    /*Hobbies*/
+    
+    /*Formación Académica*/
 
-/*Hobbies*/
- 
-/*Formación Académica*/
+    /*Experiencia Profesional*/
 
-/*Experiencia Profesional*/
+    /*Contacto*/
 
- /*Contacto*/
-
-/*Footer*/
-
+    /*Footer*/
 }
