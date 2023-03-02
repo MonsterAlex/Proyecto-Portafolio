@@ -1,0 +1,132 @@
+.experience
+{
+    margin-top: 13px;
+}
+
+.experiencie__box
+{
+    margin: 0 32px 64px 32px;
+}
+
+.experience__img
+{
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.experience__title
+{
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cor-de-texto);
+}
+
+.experience__text
+{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--cor-de-texto);
+}
+
+.experience__description
+{
+    display: flex;
+}
+
+.experiencia__repo--botao
+{       
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid var(--cor-de-botones);
+    color: var(--cor-de-botones);
+    box-sizing: border-box;
+
+    background-color: transparent;
+    color: var(--cor-de-botones);
+
+    transition: 0.5s;
+}
+
+.experience__demo--botao
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    margin-left: 16px;
+    border: 1px solid var(--cor-de-botones);
+    background-color: var(--cor-de-botones);
+    
+    color: var(--cor-blanco);
+
+    transition: 0.5s;
+}
+
+/*diseños adicionales*/
+
+.experiencia__repo--botao:hover
+{
+    background-color: var(--cor-de-transicion-repo);
+    color: var(--cor-de-botones);
+    border-color: var(--cor-de-transicion-repo);
+}
+
+.experience__demo--botao:hover
+{
+    background-color: var(--cor-de-transicion-demo);
+    color: var(--cor-blanco);
+    border: 1px solid var(--cor-de-transicion-demo);
+}
+
+@media (min-width: 700px) 
+{
+    .experiencie__box
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience__img
+    {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .experiencie__box
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .experiencie__box:nth-child(2) 
+    {
+        margin-top: 50px;
+    }
+
+    .experiencie__box:nth-child(3) 
+    {
+        flex-direction: row-reverse;
+    }
+
+    .experiencie__box:nth-child(5) 
+    {
+        flex-direction: row-reverse;
+    }
+
+    .experience__info
+    {
+        margin: 0 5%;
+    }
+
+    .experience__img
+    {
+        width: 50%;
+    }
+}

@@ -14,8 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Raleway';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 8px;
     color: var(--cor-de-texto);
 }
 
@@ -52,6 +53,16 @@
 
 @media (min-width: 1000px) 
 {
+    .menu
+    {
+        margin: 32px 32px;
+    }
+    
+    .menu__header
+    {
+        font-size: 16px;
+    }
+
     .menu__list
     {
         display: flex;

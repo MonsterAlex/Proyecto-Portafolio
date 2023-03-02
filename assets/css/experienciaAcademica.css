@@ -1,0 +1,91 @@
+.academic
+{
+    background-color: var(--cor-de-secciones);
+}
+
+.academic__courses
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.academic__courses__list
+{
+    margin: 0;
+    padding: 0;
+}
+
+.academic__courses__list li
+{
+    padding: 0;
+    margin: 32px;
+}
+
+.academic__courses__item__img img:nth-child(1) 
+{
+    margin-top: 18px;
+}
+
+.academic__courses__item__img
+{
+    background-color: var(--cor-blanco);
+}
+
+.academic__courses__item__title h4 
+{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: -25px;
+    text-align: start;
+}
+
+.academic__courses__item__subtitle
+{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: start;
+}
+
+/********** Diseño Responsivo **********/
+
+@media (min-width: 700px)
+{
+    .academic__courses
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .academic__courses__box
+    {
+        width: 18rem;
+    }
+
+    .academic__courses__item__img img 
+    {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .academic 
+    {
+        margin-top: 82px;
+    }
+
+    .academic__courses__box
+    {
+        width: 380px;
+    }
+
+    .academic__courses__item__img
+    {
+        padding: 30px 30px;
+    }
+
+    .academic__courses__item__img img 
+    {
+        width: 70%;
+    }
+}

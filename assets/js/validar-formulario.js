@@ -1,25 +1,31 @@
-const datosFormulario = document.querySelector(".formcontato__input");
-
 function validarTexto()
 {
-    let datosEscritosFormulario = document.querySelector(".formcontato__input").value;
-    let validar = datosEscritosFormulario.match(/^[a-z-A-Z]*$/);
+    window.event.preventDefault()
 
-    if(!validar == "") 
+    if(document.form.nombre.value=="")
     {
-        alert("Es Necesario que ingrese los datos requeridos")
-        return true;
+        alert("El campo nombre es obligatorio");
+        document.form.nombre.focus();
     }
-    else
+    else if(document.form.email.value=="")
     {
-      return false;
+        alert("El campo email es obligatorio");
+        document.form.email.focus();
+    }
+    else if(document.form.email.value.indexOf('@')==1 || document.form.email.value.indexOf('.')==1)
+    {
+        alert("El e-mail ingresado no es valido");
+    }
+    else if(document.form.asunto.value=="")
+    {
+        alert("El Campo asunto es obligatorio")
+        document.form.asunto.focus();
+    }
+    else if (document.form.mensaje.value=="" || document.form.mensaje.value.length <= 50 )
+    {
+        alert("Campo Mensaje es obligatorio y debe contener máximo 50 carateres"); 
+        document.form.mensaje.focus();
     }
 }
 
-function btnEnviar()
-{
-    if(!validarTexto()) 
-    {
-        alert("Formulario enviado")
-    }
-}
+document.querySelector('form').addEventListener('submit',validarTexto);
