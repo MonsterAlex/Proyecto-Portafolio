@@ -1,26 +1,25 @@
-$(document).ready(function()
+const datosFormulario = document.querySelector(".formcontato__input");
+
+function validarTexto()
 {
+    let datosEscritosFormulario = document.querySelector(".formcontato__input").value;
+    let validar = datosEscritosFormulario.match(/^[a-z-A-Z]*$/);
 
-  $("#enviar-info").click(function(event)
-  {
-    $("#form").submit();
-
-    var nombreContacto=$("#nombre").val();
-    var mailContacto=$("#email").val();
-    if(nombreContacto=="" || mailContacto=="")
+    if(!validar == "") 
     {
-      alert("Alguno de los campos esta vacio",1500);
-    }          
-    else
-    { 
-      if(nombreContacto=="Alejandro" && mailContacto=="5321@1.com")
-      {
-        alert("Bienvenido De nuevo");
-      }  
-      else
-      {
-        alert("El Usuario o contraseña son incorrectos");
-      }
+        alert("Es Necesario que ingrese los datos requeridos")
+        return true;
     }
-  });
-});
+    else
+    {
+      return false;
+    }
+}
+
+function btnEnviar()
+{
+    if(!validarTexto()) 
+    {
+        alert("Formulario enviado")
+    }
+}

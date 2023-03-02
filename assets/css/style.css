@@ -25,6 +25,7 @@ body
     margin: 0;
     padding: 0;
     line-height: 1;
+    width: 100vw;
 }
 
 ol, ul,li 
@@ -38,104 +39,24 @@ a
     color: var(--cor-de-texto);
 }
 
-/********** Sección Title **********/
-.title
+.todo
 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 208px;
-}
-
-.title__div
-{
-    display: flex;
-    flex-direction: row;
-    
-    align-items: flex-start;
-    padding: 0 0 7.5rem;
-    margin: 32px 152px;
-
-    width: 1136px;
-    height: 368px;
-}
-
-.title__container
-{
+    margin: 0 16px 0 16px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 46.938rem;
-    height: 15.375rem;
-    
+    overflow: hidden;
 }
 
-.title__bio
+.section__title 
 {
     font-weight: 700;
-    font-size: 52px;
-    line-height: 61px;
-    color: var(--cor-de-texto);
-    width: 751px;
-    height: 122px;
-}
-
-.title__subsection
-{
-    font-weight: 400;
     font-size: 22px;
     line-height: 26px;
-    margin: 1.25rem 0 0;
-    padding-top: 1.5rem;
-    color: var(--cor-de-texto);
-    width: 751px;
-    height: 52px;
+    text-align: center;
 }
 
-.title__network
-{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding-top: 4rem;
-    padding-left: 0;
-    margin: 0;
-    width: 467px;
-    height: 24px;
-}
-
-.title__network__item
-{
-    align-items: center;
-    margin-right: 1.25rem;
-
-    font-style: normal;
-    
-    font-size: 16px;
-    line-height: 19px;
-
-    transition: 0.5s;
-}
-
-.title__network__item:hover
-{
-    font-size: 17px;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.title__profile
-{
-    display: flex;
-    width: 23rem;
-    height: 23rem;
-    order: 1;
-}
 
 /********** Sección About **********/
-
 .about
 {
     display: flex;
@@ -683,63 +604,3 @@ a
 /* Vamos a desafiarnos trabajando con responsividad?
 Utiliza las referencias de los breakpoints @media abajo */
 
-
-/********** Tablet **********/
-@media screen and (min-width: 768px) 
-{
-    /* Menú */
-    
-
-    /*title*/
-
-    /*Skills*/
-
-    /*Hobbies*/
-
-    /*Formación Académica*/
-
-    /*Experiencia Profesional*/
-}
-
-/********** Mobile **********/
-@media screen and (min-width: 360px) 
-{
-    /*Menu*/
-    .menu
-    {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 0px;
-        width: 360px;
-        height: 56px;
-    }
-    
-    .menu__list
-    {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-    }
-    
-    .menu__list__item:not(:last-of-type)
-    {
-        visibility: hidden;
-    }
-
-    /*Titulo*/
-
-    /*Sección sobre mi*/
-
-    /*Skills*/
-
-    /*Hobbies*/
-    
-    /*Formación Académica*/
-
-    /*Experiencia Profesional*/
-
-    /*Contacto*/
-
-    /*Footer*/
-}

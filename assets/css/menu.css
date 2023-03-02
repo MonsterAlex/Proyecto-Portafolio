@@ -3,63 +3,65 @@
 .menu /*Parte de la cabezera*/
 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin: 0 152px;
-    width: 1136px;
-    height: 88px;
+    align-items: flex-end;
+    height: 10vh;
 }
 
 .menu__header /*Parte de la imagen y el texto*/
 {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding-top: 2rem;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--cor-de-texto);
 }
 
-.menu__title /*Titulo que aparece al lado del logo*/
+.menu__title
 {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 15px;
-    color: var(--cor-de-texto);
+    margin-left: 8px;
 }
 
 /*Parte que contiene todo el menu*/
 .menu__list
 {
-    display: flex;
-    margin-right: 1.25rem;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2.156rem;
+   display: none;
 }
 
-.menu__list__item
+.menu nav li 
 {
-    width: 67px;
-    height: 19px;
-    padding-right: 1.25rem;
-    color: var(--cor-de-texto);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    transition: 0.2s;
+    font-size: 14px;
+    font-weight: 400;
 }
 
+/*Estilos adicionales*/
 .menu__list__item:hover
 {
     text-decoration: underline;
     font-weight: bold;
 }
 
-.menu__list__item__contato
+.menu__list__item:last-child
 {
-    font-weight: 700;
+    font-weight: bold;
+}
+
+/********** Diseño responsivo **********/
+
+@media (min-width: 1000px) 
+{
+    .menu__list
+    {
+        display: flex;
+        justify-content: space-between;
+        font-size: 16px;
+        width: 600px;
+    }
+
+    .menu__list__item__c 
+    {
+        display: none;
+    }
 }
