@@ -1,0 +1,73 @@
+.skills__line, .hobbies__line
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.skills__box, .hobbies__box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: var(--cor-blanco);
+    padding: 16px;
+    margin: 22px 0 22px 0;
+    width: 156px;
+    height: 118px;
+}
+
+.skills__box ul, .hobbies__box ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+/********** Diseño Responsivo **********/
+
+@media (min-width: 700px)
+{
+    .skills__line, .hobbies__line 
+    {
+        width: 100%;
+    }
+
+    .skills__box, .hobbies__box 
+    {
+        margin: 22px 12px 10px 0px;
+        width: 180px;
+        height: 118px;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .skills__line, .hobbies__line 
+    {
+        width: 100%;
+    }
+
+    .skills__box, .hobbies__box 
+    {
+        margin: 22px 15px 22px 0px;
+        width: 108px;
+        height: 118px;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    .skills__line, .hobbies__line 
+    {
+        justify-content: center;
+    }
+
+    .skills__box, .hobbies__box
+    {
+        margin: 22px 15px 22px 0px;
+        width: 156px;
+        height: 118px;
+    }
+}

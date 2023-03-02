@@ -1,0 +1,40 @@
+.about 
+{
+    background-color: var(--cor-de-secciones);
+}
+
+.about__paragraph 
+{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.about__container img
+{
+    margin: 16px;
+}
+
+/********** Diseño Responsivo **********/
+
+@media (min-width: 1000px)
+{
+    .about 
+    {
+        padding: 62px 50px;
+        margin: 0;
+    }
+    
+    .about__container
+    {
+        height: 255px;
+    }
+}
+
+@media (min-width: 1440px)
+{
+    .about__container
+    {
+        height: 255px;
+    }
+}
